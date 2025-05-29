@@ -7,7 +7,7 @@ function sendMessage() {
   input.value = '';
 
   // Пример отправки сообщения (можно заменить на real backend)
-  fetch('https://api-inference.huggingface.co/models/gpt2', {
+  fetch('https://localhost:5000/api/chat', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ message })
